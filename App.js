@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import SplashScreen from "react-native-splash-screen";
 
 import Drawer from "./app/components/Drawer";
 
@@ -26,6 +27,7 @@ import FCM, { NotificationActionType } from "react-native-fcm";
 export default class App extends Component {
 
   async componentDidMount() {
+    SplashScreen.hide();
     registerAppListener(this.props.navigation);
     FCM.getInitialNotification().then(notif => {
       this.setState({

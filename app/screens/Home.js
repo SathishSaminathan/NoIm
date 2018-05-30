@@ -1,18 +1,29 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image,ImageBackground,Dimensions, TouchableOpacity, StatusBar, Alert, BackHandler } from 'react-native';
-import { KrossIcon } from '../assets/icons';
-
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import RNImmediatePhoneCall from "react-native-immediate-phone-call";
+import { connect } from "react-redux";
+import { signUp,login,logout } from "../store/actions";
+
+import { KrossIcon } from '../assets/icons';
 
 import images from '../assets/img/image';
+import { Button } from 'native-base';
 
 const { width, height } = Dimensions.get('window');
 
 // create a component
-class Home extends Component {    
+class Home extends Component {
+    
+    constructor(props){
+        super(props)
+        this.state={
+            loggedInStatus:true,
+            // userFirstName:""
+        }
+    }
     
     static navigationOptions={
         drawerIcon:(
@@ -47,6 +58,12 @@ class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
+            {/* <Button
+                onPress={()=>this.props.signUpFun("keethu")}
+                title="Learn More"
+                color="red"
+                accessibilityLabel="Learn more about this purple button"
+            /> */}
             <StatusBar
             // translucent={true}   
             backgroundColor={'#03A9F4'}
@@ -68,7 +85,8 @@ class Home extends Component {
                                 <View style={styles.headerTextArea}>
                                     <Text style={styles.headerText}>
                                         {/* <FontAwesome style={styles.headerIconStyle} name="rocket"/> */}
-                                        Details
+                                        Details 
+                                        {/* {this.props.userFirstNames} */}
                                     </Text>
                                     <Text style={styles.headerText}>
                                         Contact
@@ -209,5 +227,18 @@ const styles = StyleSheet.create({
     }
 });
 
+const mapStateToProps = (state) => {
+    return {
+        userFirstNames:state.signUp.userFirstName
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+  return{
+    signUpFun: (userFirstName) => dispatch(signUp(userFirstName))
+  };
+};
+
+
 //make this component available to the app
-export default Home;
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

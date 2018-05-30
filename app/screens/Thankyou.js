@@ -1,20 +1,29 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, StatusBar, Image } from 'react-native';
-
+import { View, Text, StyleSheet, StatusBar, Image,ToastAndroid } from 'react-native';
+import DeviceInfo from "react-native-device-info";
 import images from '../assets/img/image';
 import LandscapeModeWarning from "../components/LandscapeModeWarning";
+
+const brand = DeviceInfo.getBrand();
+const phoneNumber = DeviceInfo.getPhoneNumber();
+const model = DeviceInfo.getModel();
 
 // create a component
 class Thankyou extends Component {
 
     constructor(){ 
         super();     
+        ToastAndroid.showWithGravity(
+            phoneNumber,
+            ToastAndroid.SHORT,
+            ToastAndroid.TOP
+          );
         this.state = {          
             OrientationStatus : '',     
             Height_Layout : '',     
             Width_Layout : '',          
-            }
+        }
     }
 
     componentDidMount(){ 

@@ -11,6 +11,7 @@
     "native-base": "^2.4.5",
     "react": "16.3.1",
     "react-native": "0.55.4",
+    "react-native-device-info": "^0.21.5",
     "react-native-fcm": "^15.0.2",
     "react-native-immediate-phone-call": "^1.0.0",
     "react-native-splash-screen": "^3.0.6",

@@ -138,6 +138,7 @@ android {
 
 dependencies {
     compile project(':react-native-splash-screen')
+    compile project(':lottie-react-native')
     compile project(':react-native-fcm')
     compile project(':react-native-immediate-phone-call')
     compile 'com.google.firebase:firebase-core:10.0.1' //this decides your firebase SDK version

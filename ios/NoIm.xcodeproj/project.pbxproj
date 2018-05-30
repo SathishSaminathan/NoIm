@@ -52,6 +52,7 @@
 		343ECD43766E43C8B708FE52 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53D0036724E04FCCB4F6E4F9 /* Zocial.ttf */; };
 		6874192807E14C908A0D18D1 /* libRNImmediatePhoneCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5729D387A05440290B99864 /* libRNImmediatePhoneCall.a */; };
 		952F1EF85B704777B6AD33D0 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 380BACBF5EF9400382EC14C9 /* libSplashScreen.a */; };
+		D1F8EF1998E94AAA94F368D9 /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C0E4998F7B4E41AA92A242 /* libLottieReactNative.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -375,6 +376,8 @@
 		D5729D387A05440290B99864 /* libRNImmediatePhoneCall.a */ = {isa = PBXFileReference; name = "libRNImmediatePhoneCall.a"; path = "libRNImmediatePhoneCall.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		367B4D718AD24207B6959772 /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; name = "SplashScreen.xcodeproj"; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		380BACBF5EF9400382EC14C9 /* libSplashScreen.a */ = {isa = PBXFileReference; name = "libSplashScreen.a"; path = "libSplashScreen.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		0F39BA0F50134830A5F32E31 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; name = "LottieReactNative.xcodeproj"; path = "../node_modules/lottie-react-native/src/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		22C0E4998F7B4E41AA92A242 /* libLottieReactNative.a */ = {isa = PBXFileReference; name = "libLottieReactNative.a"; path = "libLottieReactNative.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +409,7 @@
 				ADDC75290C7C41ACAFA52DAD /* libRNFIRMessaging.a in Frameworks */,
 				6874192807E14C908A0D18D1 /* libRNImmediatePhoneCall.a in Frameworks */,
 				952F1EF85B704777B6AD33D0 /* libSplashScreen.a in Frameworks */,
+				D1F8EF1998E94AAA94F368D9 /* libLottieReactNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +599,7 @@
 				27FCAF2FF0D741E2A8F3F9B1 /* RNFIRMessaging.xcodeproj */,
 				3E7813CAAFC9451D9EF44DA0 /* RNImmediatePhoneCall.xcodeproj */,
 				367B4D718AD24207B6959772 /* SplashScreen.xcodeproj */,
+				0F39BA0F50134830A5F32E31 /* LottieReactNative.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1257,11 +1262,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Debug;
@@ -1285,11 +1292,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Release;
@@ -1313,6 +1322,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Debug;
@@ -1335,6 +1345,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Release;
@@ -1367,11 +1378,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Debug;
@@ -1404,11 +1417,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Release;
@@ -1440,11 +1455,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Debug;
@@ -1476,11 +1493,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-fcm\ios",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 				);
 			};
 			name = Release;

@@ -1,9 +1,11 @@
-import { SIGN_UP,LOGIN,LOGOUT } from "../actions/actionTypes";
+import { SIGN_UP,LOGIN,LOGOUT, ADDIMAGE } from "../actions/actionTypes";
+import images from "../../assets/img/sachuImg.jpg";
 
 const initialState = {
     loggedIn: false,
     userFirstName:"Sathish",
-    userLastName:"Saminathan"
+    userLastName:"Saminathan",
+    profileImage:images
 }
 
 const reducer = (state = initialState, action) => {
@@ -20,6 +22,11 @@ const reducer = (state = initialState, action) => {
         case LOGOUT:
         
         return;
+        case ADDIMAGE:
+            return{
+                ...state,
+                profileImage:action.userImage
+            }
     
         default:
             return state;

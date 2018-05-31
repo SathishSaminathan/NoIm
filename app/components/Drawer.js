@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import { StyleSheet,Image } from "react-native";
+import { StyleSheet,Image,Button } from "react-native";
 import { DrawerNavigator,DrawerItems } from "react-navigation";
 import { Container, Content, Header, Body, Icon } from "native-base";
 
-
+import ImagePicker from "./ImagePicker";
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Extracurricular from "../screens/Extracurricular";
 import Education from "../screens/Education";
 import Thankyou from "../screens/Thankyou";
-import images from "../assets/img/image";
 
 const CustomDrawerContentComponent =(props)=>(
   <Container>
     <Header
      style={{height:200}}>
-      <Body>
-        <Image
-          style={styles.drawerImageStyle}
-          source={images.drawerImage}
-        />
+      <Body
+      style={{
+        alignItems:"center"
+      }}>
+        <ImagePicker />
       </Body>
     </Header>
     <Content>
@@ -56,5 +55,6 @@ const styles = StyleSheet.create({
   },
 });
 
-  export default Drawer;
+export default Drawer;
   
+//()=>this.props.navigation.openDrawer()

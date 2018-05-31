@@ -72,14 +72,14 @@ class Home extends Component {
                 {/* <Image source={require('../assets/img/sachuImg.jpg')} /> */}
                 <ImageBackground
                         style={styles.backGroundImage}
-                        source={images.profileImage} 
+                        source={this.props.pickedImage} 
                         blurRadius={25}>
                         <View style={styles.viewArea}>
                             <View 
                             style={styles.profileImageArea}>
                             <Image  
                                 style={styles.profileImageStyle}
-                                source={images.profileImage}/>
+                                source={this.props.pickedImage}/>
                             </View>
                             <View style={styles.customCard}>
                                 <View style={styles.headerTextArea}>
@@ -229,7 +229,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state) => {
     return {
-        userFirstNames:state.signUp.userFirstName
+        userFirstNames:state.signUp.userFirstName,
+        pickedImage:state.signUp.profileImage
     };
 };
 

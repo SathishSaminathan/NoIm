@@ -55,6 +55,7 @@
 		D1F8EF1998E94AAA94F368D9 /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C0E4998F7B4E41AA92A242 /* libLottieReactNative.a */; };
 		D669CB0C48424F5988A71070 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 250267F9DB224F9BA2C1CB9F /* libRNDeviceInfo.a */; };
 		31F02C34326D413AACA486EE /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68AE5857C5B42E1AD1C83B6 /* libRNDeviceInfo-tvOS.a */; };
+		9292BF8580154C5F9D4FF27E /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70917861CC6B4D5F84685DA2 /* libRNImagePicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,6 +384,8 @@
 		1DDFC9D509D14092A1E19A6D /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; name = "RNDeviceInfo.xcodeproj"; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		250267F9DB224F9BA2C1CB9F /* libRNDeviceInfo.a */ = {isa = PBXFileReference; name = "libRNDeviceInfo.a"; path = "libRNDeviceInfo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		A68AE5857C5B42E1AD1C83B6 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; name = "libRNDeviceInfo-tvOS.a"; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7BC0118A79484047B6D3DC0A /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		70917861CC6B4D5F84685DA2 /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +419,7 @@
 				952F1EF85B704777B6AD33D0 /* libSplashScreen.a in Frameworks */,
 				D1F8EF1998E94AAA94F368D9 /* libLottieReactNative.a in Frameworks */,
 				D669CB0C48424F5988A71070 /* libRNDeviceInfo.a in Frameworks */,
+				9292BF8580154C5F9D4FF27E /* libRNImagePicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +612,7 @@
 				367B4D718AD24207B6959772 /* SplashScreen.xcodeproj */,
 				0F39BA0F50134830A5F32E31 /* LottieReactNative.xcodeproj */,
 				1DDFC9D509D14092A1E19A6D /* RNDeviceInfo.xcodeproj */,
+				7BC0118A79484047B6D3DC0A /* RNImagePicker.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1273,6 +1278,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1280,6 +1286,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1306,6 +1313,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1313,6 +1321,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;
@@ -1338,6 +1347,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1362,6 +1372,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;
@@ -1397,6 +1408,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1404,6 +1416,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1439,6 +1452,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1446,6 +1460,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;
@@ -1480,6 +1495,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1487,6 +1503,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1521,6 +1538,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1528,6 +1546,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
 					"$(SRCROOT)\..\node_modules\lottie-react-native\src\ios\LottieReactNative",
 					"$(SRCROOT)\..\node_modules\react-native-device-info\ios\RNDeviceInfo",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;

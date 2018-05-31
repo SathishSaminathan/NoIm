@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, StatusBar, Image,ToastAndroid } from 'react-native';
+import { View, Text, StyleSheet, StatusBar, Image,ToastAndroid,Alert } from 'react-native';
 import DeviceInfo from "react-native-device-info";
 import images from '../assets/img/image';
 import LandscapeModeWarning from "../components/LandscapeModeWarning";
@@ -14,11 +14,22 @@ class Thankyou extends Component {
 
     constructor(){ 
         super();     
-        ToastAndroid.showWithGravity(
+        // ToastAndroid.showWithGravity(
+        //     phoneNumber,
+        //     ToastAndroid.SHORT,
+        //     ToastAndroid.TOP
+        //   );
+        if(phoneNumber.length>10){
+            phoneNumber=phoneNumber.substring(2)
+        }
+        Alert.alert(
+            'Your Number',
             phoneNumber,
-            ToastAndroid.SHORT,
-            ToastAndroid.TOP
-          );
+            [
+              {text: 'OK', onPress: () => console.log('OK Pressed')},
+            ],
+            { cancelable: true }
+          )
         this.state = {          
             OrientationStatus : '',     
             Height_Layout : '',     

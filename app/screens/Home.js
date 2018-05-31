@@ -75,11 +75,10 @@ class Home extends Component {
                         source={this.props.pickedImage} 
                         blurRadius={25}>
                         <View style={styles.viewArea}>
-                            <View 
-                            style={styles.profileImageArea}>
-                            <Image  
-                                style={styles.profileImageStyle}
-                                source={this.props.pickedImage}/>
+                            <View style={styles.profileImageArea}>
+                                <Image  
+                                    style={styles.profileImageStyle}
+                                    source={this.props.pickedImage}/>
                             </View>
                             <View style={styles.customCard}>
                                 <View style={styles.headerTextArea}>
@@ -87,9 +86,6 @@ class Home extends Component {
                                         {/* <FontAwesome style={styles.headerIconStyle} name="rocket"/> */}
                                         Details 
                                         {/* {this.props.userFirstNames} */}
-                                    </Text>
-                                    <Text style={styles.headerText}>
-                                        Contact
                                     </Text>
                                 </View>
                                 <View style = {styles.horizantalLineStyle} />
@@ -103,17 +99,24 @@ class Home extends Component {
                                             TIRUPUR.641602
                                         </Text>
                                     </View>   
-                                    <View style = {styles.verticalLineStyle} />
+                                    <View style = {styles.horizantalLineStyle} />
+                                   <View style={styles.headerTextArea}>
+                                        <Text style={styles.headerText}>
+                                            Contact 
+                                        </Text>
+                                    </View>
+                                    <View style = {styles.horizantalLineStyle} />
                                     <View style={styles.rightContentArea}>
-                                        <View style={styles.rightContents}>                                            
+                                        <TouchableOpacity style={styles.rightContents}>                                            
                                             <MaterialIcons style={styles.emailIcon} name="mail"/>
-                                            <Text style={styles.emailMobile}>
+                                            <Text style={styles.emailText}>
                                                 sathishcse1975@gmail.com
                                             </Text>
-                                        </View>
+                                        </TouchableOpacity>
+                                        <View style = {styles.horizantalLineStylePartial} />
                                         <TouchableOpacity style={styles.rightContents} onPress={()=>this.makeCall("8012941249")}>                                            
                                             <MaterialIcons style={styles.phoneIcon} name="phone"/>
-                                            <Text style={styles.emailMobile}>
+                                            <Text style={styles.mobileText}>
                                                 80129-41249.
                                             </Text>
                                         </TouchableOpacity>
@@ -133,42 +136,61 @@ const styles = StyleSheet.create({
         width:"100%",
     }, 
     rightContentArea:{
-        flexDirection:"column",
-        justifyContent:"space-around",
-        paddingLeft:10
+        flexDirection:"column"
     },
     rightContents:{
         width:"100%",
-        flexDirection:"row"
+        flexDirection:"row",
+        padding:5
     },
     homeIcon:{
         flexDirection:"row",
-        width:"10%"
+        width:"30%",
+        fontSize:40,
+        padding:10
     },
     addressContent:{
-        width:"90%",
-        fontSize:10
+        width:"70%",
+        fontSize:15,
+        paddingRight:4
     },
     emailIcon:{
-        width:"7%"
+        width:"30%",
+        fontSize:40,
+        padding:10,
+        color:"#ce343c"
     },
     phoneIcon:{
-        width:"7%"
+        width:"30%",
+        fontSize:40,
+        padding:10,
+        color:"#27ae61"
     },
-    emailMobile:{
-        width:"60%",
-        fontSize:10
+    emailText:{
+        width:"70%",
+        fontSize:15,
+        paddingTop:5,
+        alignSelf:"center",
+        color:"#ce343c"
+    },
+    mobileText:{
+        width:"70%",
+        fontSize:15,
+        paddingTop:5,
+        alignSelf:"center",
+        color:"#27ae61",
+        marginTop:-10
     },
     backGroundImage:{
         width:"100%",
         height:"100%"
     },
     viewArea:{
-        top:100
+        top:50
     },
     profileImageArea: {
-        width:150,
-        height:150,
+        width:200,
+        height:200,
         alignSelf:"center",
         borderWidth:5,
         borderColor:"white",
@@ -186,9 +208,10 @@ const styles = StyleSheet.create({
         marginTop:-10,
         zIndex:0,
         width: width-40,
+        height:height*0.5
     },
     headerTextArea:{
-        flexDirection:"row",
+        flexDirection:"column",
         alignItems:"center",
         justifyContent:"space-between",
         padding:10,
@@ -218,12 +241,23 @@ const styles = StyleSheet.create({
         transform: [{ rotate: '0deg'}]
     },
     contentArea:{
-        flexDirection:"row",
+        flexDirection:"column",
         paddingLeft:10
     },
     contents:{
+        width:"100%",
+        flexDirection:"row",
+        padding:5,
+        paddingTop:20,
+        paddingBottom:20
+    },
+    horizantalLineStylePartial:{
+        alignSelf:"center",
         width:"50%",
-        flexDirection:"row"
+        borderWidth: 0.5,
+        borderColor:'black',
+        margin:10,
+        marginTop:-2
     }
 });
 
